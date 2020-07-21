@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-21 09:41+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: view/item-set-calendar/site/item/browse.phtml:25
+msgid "January"
+msgstr ""
+
+#: view/item-set-calendar/site/item/browse.phtml:26
+msgid "February"
+msgstr ""
+
+#: view/item-set-calendar/site/item/browse.phtml:27
+msgid "March"
+msgstr ""
+
+#: view/item-set-calendar/site/item/browse.phtml:28
+msgid "April"
+msgstr ""
+
+#: view/item-set-calendar/site/item/browse.phtml:29
+msgid "May"
+msgstr ""
+
+#: view/item-set-calendar/site/item/browse.phtml:30
+msgid "June"
+msgstr ""
+
+#: view/item-set-calendar/site/item/browse.phtml:31
+msgid "July"
+msgstr ""
+
+#: view/item-set-calendar/site/item/browse.phtml:32
+msgid "August"
+msgstr ""
+
+#: view/item-set-calendar/site/item/browse.phtml:33
+msgid "September"
+msgstr ""
+
+#: view/item-set-calendar/site/item/browse.phtml:34
+msgid "October"
+msgstr ""
+
+#: view/item-set-calendar/site/item/browse.phtml:35
+msgid "November"
+msgstr ""
+
+#: view/item-set-calendar/site/item/browse.phtml:36
+msgid "December"
+msgstr ""
+
+#: view/item-set-calendar/site/item/browse.phtml:41
+msgid "By day"
+msgstr ""
+
+#: view/item-set-calendar/site/item/browse.phtml:69
+#, php-format
+msgid "%d items"
+msgstr ""
+
+#: view/item-set-calendar/site/item/browse.phtml:87
+msgid "By month"
+msgstr ""
+
+#: view/item-set-calendar/site/item/browse.phtml:107
+msgid "By year"
+msgstr ""
