@@ -4,12 +4,21 @@ namespace ItemSetCalendar;
 
 use ItemSetCalendar\Form\ConfigForm;
 use Omeka\Module\AbstractModule;
+use Zend\Mvc\Controller\AbstractController;
+use Zend\Mvc\MvcEvent;
 use Zend\View\Model\ViewModel;
 use Zend\View\Renderer\PhpRenderer;
-use Zend\Mvc\Controller\AbstractController;
 
 class Module extends AbstractModule
 {
+    public function onBootstrap(MvcEvent $event)
+    {
+        parent::onBootstrap($event);
+
+        $acl = $this->getServiceLocator()->get('Omeka\Acl');
+        $acl->allow(null, 'ItemSetCalendar\Controller\Site\Item');
+    }
+
     public function getConfig()
     {
         return include __DIR__ . '/config/module.config.php';
