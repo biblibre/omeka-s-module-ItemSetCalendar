@@ -3,7 +3,6 @@ namespace ItemSetCalendar\Mvc\Controller\Plugin;
 
 use Doctrine\ORM\EntityManager;
 use Omeka\Api\Adapter\Manager as ApiAdapterManager;
-use Omeka\Api\Representation\ItemRepresentation;
 use Zend\Mvc\Controller\Plugin\AbstractPlugin;
 
 class ItemSetCalendar extends AbstractPlugin
@@ -68,7 +67,7 @@ class ItemSetCalendar extends AbstractPlugin
 
         $itemAdapter = $this->apiAdapterManager->get('items');
         $items = array_map(function ($result) use ($itemAdapter) {
-            return new ItemRepresentation($result, $itemAdapter);
+            return $itemAdapter->getRepresentation($result);
         }, $results);
 
         return $items;
@@ -96,7 +95,7 @@ class ItemSetCalendar extends AbstractPlugin
 
         $itemAdapter = $this->apiAdapterManager->get('items');
         $items = array_map(function ($result) use ($itemAdapter) {
-            return new ItemRepresentation($result, $itemAdapter);
+            return $itemAdapter->getRepresentation($result);
         }, $results);
 
         return $items;
