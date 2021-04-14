@@ -3,7 +3,7 @@ namespace ItemSetCalendar\Mvc\Controller\Plugin;
 
 use Doctrine\ORM\EntityManager;
 use Omeka\Api\Adapter\Manager as ApiAdapterManager;
-use Zend\Mvc\Controller\Plugin\AbstractPlugin;
+use Laminas\Mvc\Controller\Plugin\AbstractPlugin;
 
 class ItemSetCalendar extends AbstractPlugin
 {

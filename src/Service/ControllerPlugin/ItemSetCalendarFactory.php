@@ -4,7 +4,7 @@ namespace ItemSetCalendar\Service\ControllerPlugin;
 
 use Interop\Container\ContainerInterface;
 use ItemSetCalendar\Mvc\Controller\Plugin\ItemSetCalendar;
-use Zend\ServiceManager\Factory\FactoryInterface;
+use Laminas\ServiceManager\Factory\FactoryInterface;
 
 class ItemSetCalendarFactory implements FactoryInterface
 {

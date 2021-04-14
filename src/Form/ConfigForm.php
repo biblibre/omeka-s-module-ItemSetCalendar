@@ -2,7 +2,7 @@
 namespace ItemSetCalendar\Form;
 
 use Omeka\Form\Element\ItemSetSelect;
-use Zend\Form\Form;
+use Laminas\Form\Form;
 
 class ConfigForm extends Form
 {
