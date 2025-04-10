@@ -30,6 +30,7 @@ class ItemSetCalendar extends AbstractPlugin
               AND vocab.prefix = :prefix
               AND p.localName = :localName
               AND REGEXP(v.value, :regexp) = true
+            ORDER BY year
         ';
         $query = $this->entityManager->createQuery($dql);
         $query->setParameter('itemSetId', $itemSetId);
