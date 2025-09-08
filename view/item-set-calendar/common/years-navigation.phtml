@@ -1,0 +1,23 @@
+<?php
+/**
+ * @var Omeka\Api\Representation\ItemSetRepresentation $itemSet
+ * @var string $year
+ * @var string $prevYear
+ * @var string $nextYear
+ */
+?>
+<nav class="item-set-calendar-years-navigation" role="navigation">
+    <?php if ($prevYear): ?>
+        <a href="<?= $this->url('site/item-set', [], ['query' => ['year' => $prevYear]], true) ?>" class="previous button" title="<?= $this->translate('Previous') ?>" aria-label="<?= $this->translate('Previous') ?>">
+            <i class="fas fa-angle-left"></i>
+            <?= $prevYear ?>
+        </a>
+    <?php endif; ?>
+
+    <?php if ($nextYear): ?>
+        <a href="<?= $this->url('site/item-set', [], ['query' => ['year' => $nextYear]], true) ?>" class="next button" title="<?= $this->translate('Next') ?>" aria-label="<?= $this->translate('Next') ?>">
+            <?= $nextYear ?>
+            <i class="fas fa-angle-right"></i>
+        </a>
+    <?php endif; ?>
+</nav>

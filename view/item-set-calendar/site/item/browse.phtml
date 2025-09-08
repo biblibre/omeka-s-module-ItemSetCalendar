@@ -37,6 +37,11 @@
         ]; ?>
 
         <?php if (!empty($itemsByDay)): ?>
+            <?= $this->partial(
+                'item-set-calendar/common/years-navigation',
+                ['itemSet' => $itemSet, 'year' => $year, 'prevYear' => $prevYear, 'nextYear' => $nextYear]
+            ) ?>
+
             <section id="item-set-calendar-by-day">
                 <h4><?php echo $this->translate('By day'); ?></h4>
 

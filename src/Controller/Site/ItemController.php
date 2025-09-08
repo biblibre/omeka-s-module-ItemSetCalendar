@@ -57,10 +57,25 @@ class ItemController extends AbstractActionController
                 }
             }
 
+            $years = $this->itemSetCalendar()->getYears($itemSetId);
+            $prevYear = null;
+            $nextYear = null;
+            foreach ($years as $curYear) {
+                if ($curYear < $year) {
+                    $prevYear = $curYear;
+                }
+                if ($curYear > $year) {
+                    $nextYear = $curYear;
+                    break;
+                }
+            }
+
             $view->setVariable('itemsByDay', $itemsByDay);
             $view->setVariable('itemsByMonth', $itemsByMonth);
             $view->setVariable('itemsByYear', $itemsByYear);
             $view->setVariable('year', $year);
+            $view->setVariable('prevYear', $prevYear);
+            $view->setVariable('nextYear', $nextYear);
         } else {
             $years = $this->itemSetCalendar()->getYears($itemSetId);
             $view->setVariable('years', $years);
