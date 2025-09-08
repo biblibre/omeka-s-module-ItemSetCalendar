@@ -33,6 +33,7 @@ class Module extends AbstractModule
         $form = $forms->get(ConfigForm::class);
         $form->setData([
             'item_sets' => $settings->get('itemsetcalendar_item_sets', []),
+            'itemsetcalendar_show_empty_months' => $settings->get('itemsetcalendar_show_empty_months', false),
         ]);
 
         return $renderer->formCollection($form);
@@ -53,6 +54,7 @@ class Module extends AbstractModule
 
         $formData = $form->getData();
         $settings->set('itemsetcalendar_item_sets', $formData['item_sets']);
+        $settings->set('itemsetcalendar_show_empty_months', $formData['itemsetcalendar_show_empty_months'] ? true : false);
 
         return true;
     }

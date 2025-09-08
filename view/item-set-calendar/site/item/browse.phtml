@@ -47,7 +47,7 @@
 
                 <div class="item-set-calendar-calendar">
                     <?php foreach ($months as $month => $monthName): ?>
-                        <?php if (!empty($itemsByDay[$month])): ?>
+                        <?php if (!empty($itemsByDay[$month]) || $this->setting('itemsetcalendar_show_empty_months', false)): ?>
                             <div class="item-set-calendar-month">
                                 <h5><?php echo $monthName; ?></h5>
                                 <div class="item-set-calendar-days">

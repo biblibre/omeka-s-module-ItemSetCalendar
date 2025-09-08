@@ -21,5 +21,14 @@ class ConfigForm extends Form
                 'class' => 'chosen-select',
             ],
         ]);
+
+        $this->add([
+            'name' => 'itemsetcalendar_show_empty_months',
+            'type' => 'Laminas\Form\Element\Checkbox',
+            'options' => [
+                'label' => 'Show empty months', // @translate
+                'info' => 'Show all months even when they contain no items', // @translate
+            ],
+        ]);
     }
 }
