@@ -12,6 +12,16 @@
     <?php echo $itemSet->displayValues(); ?>
 </div>
 <div class="item-set-items">
+
+    <?php if (isset($year)): ?>
+        <div class="item-set-navigation">
+            <a href="<?= $this->itemSet->siteUrl() ?>" class="button item-set-navigation-back-button">
+                <i class="fas fa-angle-left" aria-hidden="true"></i>
+                <?= $this->escapeHtml($this->translate('Back to item set')) ?>
+            </a>
+        </div>
+    <?php endif; ?>
+
     <?php echo '<h3>' . $this->escapeHtml($this->translate('Items')) . '</h3>'; ?>
 
     <?php if (isset($date)): ?>
