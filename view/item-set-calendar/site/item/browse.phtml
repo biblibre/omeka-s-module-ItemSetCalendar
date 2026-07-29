@@ -1,15 +1,24 @@
-<?php $this->htmlElement('body')->appendAttribute('class', 'item resource browse item-set'); ?>
-<?php $this->headLink()->appendStylesheet($this->assetUrl('css/item-set-calendar.css', 'ItemSetCalendar')); ?>
-<?php $pageTitle = $itemSet->displayTitle(); ?>
-<?php if (isset($date)): ?>
-    <?php $pageTitle .= ' (' . $date . ')'; ?>
-<?php elseif (isset($year)): ?>
-    <?php $pageTitle .= ' (' . $year . ')'; ?>
-<?php endif; ?>
+<?php
+$this->htmlElement('body')->appendAttribute('class', 'item resource browse item-set');
+$this->headLink()->appendStylesheet($this->assetUrl('css/item-set-calendar.css', 'ItemSetCalendar'));
+$this->headLink()->appendStylesheet($this->assetUrl('css/resource-page-blocks.css', 'Omeka'));
+
+$filterLocale = (bool) $this->siteSetting('filter_locale_values');
+$lang = $this->lang();
+$valueLang = $filterLocale ? [$lang, ''] : null;
+
+$pageTitle = $itemSet->displayTitle(null, $valueLang);
+if (isset($date)):
+    $pageTitle .= ' (' . $date . ')';
+elseif (isset($year)):
+    $pageTitle .= ' (' . $year . ')';
+endif;
+?>
+
 <?php echo $this->pageTitle($pageTitle, 2); ?>
 <h3><?php echo $this->translate('Item set'); ?></h3>
 <div class="metadata">
-    <?php echo $itemSet->displayValues(); ?>
+    <?php echo $this->resourcePageBlocks($itemSet)->getBlocks(); ?>
 </div>
 <div class="item-set-items">
 
@@ -22,7 +31,7 @@
         </div>
     <?php endif; ?>
 
-    <?php echo '<h3>' . $this->escapeHtml($this->translate('Items')) . '</h3>'; ?>
+    <h3><?php echo $this->escapeHtml($this->translate('Items')); ?></h3>
 
     <?php if (isset($date)): ?>
         <ul>
