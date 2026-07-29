@@ -72,7 +72,7 @@
                                                     <?php echo $this->hyperlink(
                                                         $day,
                                                         $this->url(
-                                                            'site/item-set',
+                                                            null,
                                                             [],
                                                             [
                                                                 'query' => [
@@ -133,7 +133,7 @@
     <?php else: ?>
         <ul>
             <?php foreach ($years as $year): ?>
-                <li><?php echo $this->hyperlink($year, $this->url('site/item-set', [], ['query' => ['year' => $year]], true)); ?></li>
+                <li><?php echo $this->hyperlink($year, $this->url(null, [], ['query' => ['year' => $year]], true)); ?></li>
             <?php endforeach; ?>
         </ul>
     <?php endif; ?>

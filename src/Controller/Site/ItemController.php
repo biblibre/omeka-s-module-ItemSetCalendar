@@ -9,14 +9,9 @@ class ItemController extends AbstractActionController
 {
     public function browseAction()
     {
-        $itemSetId = $this->params()->fromRoute('item-set-id');
-        $itemSets = $this->settings()->get('itemsetcalendar_item_sets', []);
-        if (!in_array($itemSetId, $itemSets)) {
-            return $this->forward()->dispatch('Omeka\Controller\Site\Item', $this->params()->fromRoute());
-        }
-
         $view = new ViewModel;
 
+        $itemSetId = $this->params()->fromRoute('item-set-id');
         $itemSet = $this->api()->read('item_sets', $itemSetId)->getContent();
         $view->setVariable('itemSet', $itemSet);
 

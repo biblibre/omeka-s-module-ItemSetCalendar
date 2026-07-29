@@ -18,19 +18,12 @@ return [
             'ItemSetCalendar\Form\ConfigForm' => Form\ConfigForm::class,
         ],
     ],
-    'router' => [
-        'routes' => [
-            'site' => [
-                'child_routes' => [
-                    'item-set' => [
-                        'options' => [
-                            'defaults' => [
-                                '__NAMESPACE__' => 'ItemSetCalendar\Controller\Site',
-                            ],
-                        ],
-                    ],
-                ],
-            ],
+    'listeners' => [
+        'ItemSetCalendar\Listener\MvcListeners'
+    ],
+    'service_manager' => [
+        'invokables' => [
+            'ItemSetCalendar\Listener\MvcListeners' => Listener\MvcListeners::class,
         ],
     ],
     'translator' => [
