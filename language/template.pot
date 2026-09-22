@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-21 09:41+0200\n"
+"POT-Creation-Date: 2026-09-22 11:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,67 +17,79 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: view/item-set-calendar/site/item/browse.phtml:25
+#: view/item-set-calendar/site/item/browse.phtml:29
+msgid "Back to item set"
+msgstr ""
+
+#: view/item-set-calendar/site/item/browse.phtml:44
 msgid "January"
 msgstr ""
 
-#: view/item-set-calendar/site/item/browse.phtml:26
+#: view/item-set-calendar/site/item/browse.phtml:45
 msgid "February"
 msgstr ""
 
-#: view/item-set-calendar/site/item/browse.phtml:27
+#: view/item-set-calendar/site/item/browse.phtml:46
 msgid "March"
 msgstr ""
 
-#: view/item-set-calendar/site/item/browse.phtml:28
+#: view/item-set-calendar/site/item/browse.phtml:47
 msgid "April"
 msgstr ""
 
-#: view/item-set-calendar/site/item/browse.phtml:29
+#: view/item-set-calendar/site/item/browse.phtml:48
 msgid "May"
 msgstr ""
 
-#: view/item-set-calendar/site/item/browse.phtml:30
+#: view/item-set-calendar/site/item/browse.phtml:49
 msgid "June"
 msgstr ""
 
-#: view/item-set-calendar/site/item/browse.phtml:31
+#: view/item-set-calendar/site/item/browse.phtml:50
 msgid "July"
 msgstr ""
 
-#: view/item-set-calendar/site/item/browse.phtml:32
+#: view/item-set-calendar/site/item/browse.phtml:51
 msgid "August"
 msgstr ""
 
-#: view/item-set-calendar/site/item/browse.phtml:33
+#: view/item-set-calendar/site/item/browse.phtml:52
 msgid "September"
 msgstr ""
 
-#: view/item-set-calendar/site/item/browse.phtml:34
+#: view/item-set-calendar/site/item/browse.phtml:53
 msgid "October"
 msgstr ""
 
-#: view/item-set-calendar/site/item/browse.phtml:35
+#: view/item-set-calendar/site/item/browse.phtml:54
 msgid "November"
 msgstr ""
 
-#: view/item-set-calendar/site/item/browse.phtml:36
+#: view/item-set-calendar/site/item/browse.phtml:55
 msgid "December"
 msgstr ""
 
-#: view/item-set-calendar/site/item/browse.phtml:41
+#: view/item-set-calendar/site/item/browse.phtml:65
 msgid "By day"
 msgstr ""
 
-#: view/item-set-calendar/site/item/browse.phtml:69
+#: view/item-set-calendar/site/item/browse.phtml:93
 #, php-format
 msgid "%d items"
 msgstr ""
 
-#: view/item-set-calendar/site/item/browse.phtml:87
+#: view/item-set-calendar/site/item/browse.phtml:111
 msgid "By month"
 msgstr ""
 
-#: view/item-set-calendar/site/item/browse.phtml:107
+#: view/item-set-calendar/site/item/browse.phtml:133
 msgid "By year"
+msgstr ""
+
+#: src/Form/ConfigForm.php:29
+msgid "Show empty months"
+msgstr ""
+
+#: src/Form/ConfigForm.php:30
+msgid "Show all months even when they contain no items"
 msgstr ""

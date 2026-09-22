@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-21 09:41+0200\n"
+"POT-Creation-Date: 2026-09-22 11:18+0200\n"
 "PO-Revision-Date: 2020-07-21 09:46+0200\n"
 "Last-Translator: Julian Maurice <julian.maurice@biblibre.com>\n"
 "Language-Team: French\n"
@@ -18,67 +18,79 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Poedit 2.2.1\n"
 
-#: view/item-set-calendar/site/item/browse.phtml:25
+#: view/item-set-calendar/site/item/browse.phtml:29
+msgid "Back to item set"
+msgstr "Revenir à la collection"
+
+#: view/item-set-calendar/site/item/browse.phtml:44
 msgid "January"
 msgstr "Janvier"
 
-#: view/item-set-calendar/site/item/browse.phtml:26
+#: view/item-set-calendar/site/item/browse.phtml:45
 msgid "February"
 msgstr "Février"
 
-#: view/item-set-calendar/site/item/browse.phtml:27
+#: view/item-set-calendar/site/item/browse.phtml:46
 msgid "March"
 msgstr "Mars"
 
-#: view/item-set-calendar/site/item/browse.phtml:28
+#: view/item-set-calendar/site/item/browse.phtml:47
 msgid "April"
 msgstr "Avril"
 
-#: view/item-set-calendar/site/item/browse.phtml:29
+#: view/item-set-calendar/site/item/browse.phtml:48
 msgid "May"
 msgstr "Mai"
 
-#: view/item-set-calendar/site/item/browse.phtml:30
+#: view/item-set-calendar/site/item/browse.phtml:49
 msgid "June"
 msgstr "Juin"
 
-#: view/item-set-calendar/site/item/browse.phtml:31
+#: view/item-set-calendar/site/item/browse.phtml:50
 msgid "July"
 msgstr "Juillet"
 
-#: view/item-set-calendar/site/item/browse.phtml:32
+#: view/item-set-calendar/site/item/browse.phtml:51
 msgid "August"
 msgstr "Août"
 
-#: view/item-set-calendar/site/item/browse.phtml:33
+#: view/item-set-calendar/site/item/browse.phtml:52
 msgid "September"
 msgstr "Septembre"
 
-#: view/item-set-calendar/site/item/browse.phtml:34
+#: view/item-set-calendar/site/item/browse.phtml:53
 msgid "October"
 msgstr "Octobre"
 
-#: view/item-set-calendar/site/item/browse.phtml:35
+#: view/item-set-calendar/site/item/browse.phtml:54
 msgid "November"
 msgstr "Novembre"
 
-#: view/item-set-calendar/site/item/browse.phtml:36
+#: view/item-set-calendar/site/item/browse.phtml:55
 msgid "December"
 msgstr "Décembre"
 
-#: view/item-set-calendar/site/item/browse.phtml:41
+#: view/item-set-calendar/site/item/browse.phtml:65
 msgid "By day"
 msgstr "Par jour"
 
-#: view/item-set-calendar/site/item/browse.phtml:69
+#: view/item-set-calendar/site/item/browse.phtml:93
 #, php-format
 msgid "%d items"
 msgstr "%d contenus"
 
-#: view/item-set-calendar/site/item/browse.phtml:87
+#: view/item-set-calendar/site/item/browse.phtml:111
 msgid "By month"
 msgstr "Par mois"
 
-#: view/item-set-calendar/site/item/browse.phtml:107
+#: view/item-set-calendar/site/item/browse.phtml:133
 msgid "By year"
 msgstr "Par année"
+
+#: src/Form/ConfigForm.php:29
+msgid "Show empty months"
+msgstr "Montrer les mois vides"
+
+#: src/Form/ConfigForm.php:30
+msgid "Show all months even when they contain no items"
+msgstr "Montrer tous les mois même quand ils ne contiennent aucun contenu"
