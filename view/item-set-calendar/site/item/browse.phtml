@@ -62,13 +62,13 @@ endif;
             ) ?>
 
             <section id="item-set-calendar-by-day">
-                <h4><?php echo $this->translate('By day'); ?></h4>
+                <h4><?= $this->escapeHtml($this->translate('By day')) ?></h4>
 
                 <div class="item-set-calendar-calendar">
                     <?php foreach ($months as $month => $monthName): ?>
                         <?php if (!empty($itemsByDay[$month]) || $this->setting('itemsetcalendar_show_empty_months', false)): ?>
                             <div class="item-set-calendar-month">
-                                <h5><?php echo $monthName; ?></h5>
+                                <h5><?= $this->escapeHtml($monthName) ?></h5>
                                 <div class="item-set-calendar-days">
                                     <?php $days_in_month = cal_days_in_month(CAL_GREGORIAN, $month, $year); ?>
                                     <?php for($day = 1; $day <= $days_in_month; $day++): ?>
@@ -94,7 +94,7 @@ endif;
                                                     ); ?>
                                                 <?php endif; ?>
                                             <?php else: ?>
-                                                <span><?php echo $day; ?></span>
+                                                <span><?= $this->escapeHtml($day) ?></span>
                                             <?php endif; ?>
                                         </div>
                                     <?php endfor; ?>
@@ -108,13 +108,13 @@ endif;
 
         <?php if (!empty($itemsByMonth)): ?>
             <section id="item-set-calendar-by-month">
-                <h4><?php echo $this->translate('By month'); ?></h4>
+                <h4><?= $this->escapeHtml($this->translate('By month')) ?></h4>
 
                 <div class="item-set-calendar-months">
                     <?php foreach ($months as $month => $monthName): ?>
                         <?php if (!empty($itemsByMonth[$month])): ?>
                             <div class="item-set-calendar-month">
-                                <h5><?php echo $monthName; ?></h5>
+                                <h5><?= $this->escapeHtml($monthName) ?></h5>
 
                                 <ul>
                                     <?php foreach ($itemsByMonth[$month] as $item): ?>
@@ -130,7 +130,7 @@ endif;
 
         <?php if (!empty($itemsByYear)): ?>
             <section id="item-set-calendar-by-year">
-                <h4><?php echo $this->translate('By year'); ?></h4>
+                <h4><?= $this->escapeHtml($this->translate('By year')) ?></h4>
 
                 <ul>
                     <?php foreach ($itemsByYear as $item): ?>

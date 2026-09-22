@@ -8,15 +8,15 @@
 ?>
 <nav class="item-set-calendar-years-navigation" role="navigation">
     <?php if ($prevYear): ?>
-        <a href="<?= $this->url(null, [], ['query' => ['year' => $prevYear]], true) ?>" class="previous button" title="<?= $this->translate('Previous') ?>" aria-label="<?= $this->translate('Previous') ?>">
+        <a href="<?= $this->url(null, [], ['query' => ['year' => $prevYear]], true) ?>" class="previous button" title="<?= $this->escapeHtml($this->translate('Previous')) ?>" aria-label="<?= $this->escapeHtml($this->translate('Previous')) ?>">
             <i class="fas fa-angle-left"></i>
-            <?= $prevYear ?>
+            <?= $this->escapeHtml($prevYear) ?>
         </a>
     <?php endif; ?>
 
     <?php if ($nextYear): ?>
-        <a href="<?= $this->url(null, [], ['query' => ['year' => $nextYear]], true) ?>" class="next button" title="<?= $this->translate('Next') ?>" aria-label="<?= $this->translate('Next') ?>">
-            <?= $nextYear ?>
+        <a href="<?= $this->url(null, [], ['query' => ['year' => $nextYear]], true) ?>" class="next button" title="<?= $this->escapeHtml($this->translate('Next')) ?>" aria-label="<?= $this->escapeHtml($this->translate('Next')) ?>">
+            <?= $this->escapeHtml($nextYear) ?>
             <i class="fas fa-angle-right"></i>
         </a>
     <?php endif; ?>
